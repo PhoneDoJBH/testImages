@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image2-app
+  namespace: test-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: image2-app
+  template:
+    metadata:
+      labels:
+        app: image2-app
+    spec:
+      containers:
+        - name: image2
+          image: 476287654495.dkr.ecr.us-east-1.amazonaws.com/image2:latest
+          ports:
+            - containerPort: 3000
