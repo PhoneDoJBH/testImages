@@ -6,6 +6,11 @@ metadata:
   labels:
     app: test-images-app
   annotations:
+    kubernetes.io/ingress.class: alb
+    Key: kubernetes.io/role/elb
+    Value: "1"
+    Key: kubernetes.io/role/internal-elb
+    Value: "1"
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/affinity: "cookie"
