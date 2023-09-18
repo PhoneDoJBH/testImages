@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: test-images-app-ingress2
+  name: test-images-app-ingress3
   namespace: test-images-app
   labels:
     app: test-images-app
