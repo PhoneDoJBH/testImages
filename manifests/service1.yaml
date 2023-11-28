@@ -5,10 +5,8 @@ metadata:
   name: image1-service
   labels:
     app: image1-app
-  annotations:
-    alb.ingress.kubernetes.io/healthcheck-path: /
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: image1-app
   ports:
