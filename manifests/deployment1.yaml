@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: integrations-app
-          image: 476287654495.dkr.ecr.us-east-1.amazonaws.com/image1:latest
+          image: 4476287654495.dkr.ecr.us-east-1.amazonaws.com/asterisk-image
           ports:
             - containerPort: 3000
