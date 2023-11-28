@@ -10,8 +10,8 @@ spec:
   selector:
     app: image1-app
   ports:
-    - port: 80
-      targetPort: 3000
+    - port: 5060
+      targetPort: 5060
 # apiVersion: v1
 # kind: Service
 # metadata:

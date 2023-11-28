@@ -17,4 +17,4 @@ spec:
         - name: integrations-app
           image: 476287654495.dkr.ecr.us-east-1.amazonaws.com/asterisk-image:fa2991b172217f0b47bc1275f06804114e6f95fac8ac9b5ae53a18e80909e501
           ports:
-            - containerPort: 3000
+            - containerPort: 5060
